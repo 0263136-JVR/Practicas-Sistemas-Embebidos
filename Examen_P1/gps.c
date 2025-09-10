@@ -85,7 +85,7 @@ int main(void){
 						}
 						if(receiver[4] == 'G'){
 							minmea_parse_gga(&alti, receiver);
-							alt = minmea_tocoord(&alti.altitude);
+							alt = minmea_tofloat(&alti.altitude);
 							// printf("%.7f\n",alt);
 						}
 						state = 1;
